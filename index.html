@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Task Tracker</h1>
+        <p class="welcome">Welcome to the Task Tracker!</p>
+    </div>
+    <div class="task-container">
+        <input type="text" class="task-input" placeholder="Enter your task" id="taskInput">
+
+        <input type="date" class="date-input" placeholder="Select a date" id="taskInput">
+
+        <input type="time" class="time-input" placeholder="Select a time" id="taskInput">
+        
+        <button class="btn" onclick="addTask()">Add Task</button>
+    </div>
+    <div class="table-container">
+    <table border="1"id="task-table">
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="taskDisplay">
+        <!-- Dynamic rows will be inserted here -->
+    </tbody>
+</table>
+</div>
+</body>
+</html>

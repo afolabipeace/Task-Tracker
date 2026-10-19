@@ -1,0 +1,158 @@
+/* .head{
+    background-color: #e8c4e8;
+    height: 100px;
+    width: 30%;
+    padding: 15px;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #5f5e5e;
+}
+h1{
+    color: #837f7f;
+    padding-left: 60px;
+}
+.welcome{
+    color: #837f7f;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.task-container{
+    height: 30vh;
+    width: 30%;
+    padding: 10vh;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #5f5e5e;
+    justify-content: space-between;
+}
+.btn{
+    background-color: #f7a3a3;
+    color: #343333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:monospace;
+    margin-top: 5vh;
+    margin-left: 15vh;
+}
+#taskInput{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 50vh;
+} */
+
+
+.head {
+    background-color: #e8c4e8;
+    height: auto; /* Changed from fixed 100px so content doesn't overflow */
+    width: 90%;  /* Responsive width for mobile */
+    max-width: 450px; /* Caps the width on larger screens */
+    padding: 20px;
+    margin: 5vh auto auto auto; /* Shorthand for top, right, bottom, left */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #5f5e5e;
+    text-align: center; /* Centers text naturally without padding hacks */
+}
+
+h1 {
+    color: #837f7f;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.welcome {
+    color: #837f7f;
+    font-size: 16px;
+    margin: 0;
+}
+
+.task-container {
+    background-color: #fff; /* Uncommented or set to a clean color */
+    height: auto; /* Let content dictate height instead of fixed vh */
+    width: 90%;
+    max-width: 450px;
+    padding: 30px 20px;
+    margin: 5vh auto auto auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #5f5e5e;
+    display: flex;
+    flex-direction: column; /* Stack elements neatly */
+    align-items: center;    /* Center children horizontally */
+    gap: 15px;              /* Consistent spacing between inputs/buttons */
+}
+
+#taskInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100%; /* Takes full width of its container instead of fixed vh */
+    max-width: 300px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.btn {
+    background-color: #f7a3a3;
+    color: #343333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    margin-top: 10px;
+    margin-left: 0; /* Removed large vh margin so it centers properly */
+}
+.btnAction{
+    background-color: #dc3f3f;
+    color: #f5f1f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+}
+.table-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 5vh auto auto auto;
+    overflow-x: auto; /* Adds horizontal scrolling on very small mobile screens */
+}
+
+/* Table Design */
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #5f5e5e;
+    overflow: hidden;
+    font-family: monospace;
+}
+
+/* Table Header Style */
+#task-table th {
+    background-color: #e8c4e8;
+    color: #5f5e5e;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Table Cells Style */
+#task-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #343333;
+    font-size: 14px;
+}
+
+/* Optional hover effect for rows */
+#task-table tr:hover {
+    background-color: #f9f0f9;
+}
